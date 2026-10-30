@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Survival</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: #101713;
+            color: white;
+        }
+
+        h1 {
+            color: #a8f06a;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 15px;
+        }
+
+        canvas {
+            background: #18251d;
+            border: 3px solid #627866;
+            max-width: 100%;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #a8f06a;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #pesan {
+            margin: 15px;
+            font-size: 20px;
+            color: #a8f06a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🧟 ZOMBIE SURVIVAL</h1>
+    <p>Bertahan hidup dan kalahkan semua zombie!</p>
+
+    <div class="info">
+        <div>❤️ HP: <span id="hp">100</span></div>
+        <div>☠️ Skor: <span id="skor">0</span></div>
+        <div>🌊 Level: <span id="level">1</span></div>
+    </div>
+
+    <canvas id="game" width="800" height="500"></canvas>
+
+    <p id="pesan">Tekan MULAI untuk bermain!</p>
+
+    <button onclick="mulaiGame()">▶ MULAI / MAIN LAGI</button>
+    <button onclick="jedaGame()">⏸ JEDA</button>
+
+    <p>
+        Gunakan WASD atau tombol panah untuk bergerak.<br>
+        Arahkan mouse ke zombie dan klik untuk menembak.
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
